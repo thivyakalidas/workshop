@@ -6,66 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full-Stack Workshop - Exploring Bootstrap 5</title>
     <!-- Bootstrap CSS -->
-    <link href="" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Workshop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-    <h3>Task 1: Text Alignment</h3>
+
+
+    <header class="bg-primary text-white text-center py-5 bg-gradient">
+        <div class="container">
+            <h1>Welcome to full-stack web development workshop</h1>
+            <p class="lead">Exploring Bootstrap 5 with me</p>
+        </div>
+    </header>
+
+    <section class="mt-5">
+        <div class="container py-2">
+
+    <h3 class="text-center">Task 1: Text Alignment</h3>
+    <hr>
+    <p class="text-start">This is left-aligned text.</p>
+    <p class="text-center">This is center-aligned text.</p>
+    <p class="text-end">This is right-aligned text.</p>
+    </div>
+    </section>
+
+    <section>
+        <div class="container py-2">
+    <h3 class="text-center">Task 2: Text Transformation</h3>
+    <hr>
+    <p class="text-uppercase">This text will appear in uppercase.</p>
+    <p class="text-lowercase">This text will appear in lowercase.</p>
+    <p class="text-capitalize">This text will appear capitalized.</p>
+</div>
+</section>
+
+<section class="bg-light">
+    <div class="container py-2">
+    <h3 class="text-center">Task 3: Text Weight and Italic</h3>
+    <hr>
+    <p class="fw-bold">This is bold text.</p>
+    <p class="fw-bolder">This is bolder weight text.</p>
+    <p class="fw-semibold">This is semibold weight text.</p>
+    <p class="fw-medium">This is medium weight text.</p>
+    <p class="fw-normal">This is normal weight text.</p>
+    <p class="fw-light">This is Light weight text.</p>
+    <p class="fw-lighter">This is Lighter weight text (relative to the parent element).</p>
+    <p class="fst-italic">This text is in italics.</p>
+    <p class="fst-normal">Text with normal font style</p>
+    </div>
+</section>
+
+<section>
+    <div class="container py-2">
+    <h3 class="text-center">Task 4: Text Color and Utilities</h3>
+    <hr>
+    <p class="text-primary">Tulisan warna biru (primary).</p>
+    <p class="text-success">Tulisan warna hijau (success).</p>
+    <p class="text-danger">Tulisan warna merah (danger).</p>
+    <p class="text-warning">Tulisan warna kuning (warning).</p>
+    <p class="text-secondary">Tulisan warna kelabu (secondary).</p>
+    <p class="text-dark">Tulisan warna gelap (dark).</p>
+    <p class="text-light bg-warning">Tulisan warna terang (light).</p>
+    <p class="text-white bg-danger">Tulisan warna putih (white).</p>
+    <p class="text-black">Tulisan warna hitam (black).</p>
+    <p class="text-black-50">Tulisan warna hitam 50%.</p>
+    <p class="text-white-50 bg-success">Tulisan warna putih 50%.</p>
+    <p class="lead">This is a lead paragraph for highlighting.</p>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 bg-primary text-white text-center">
+            <h2>Blue</h2>
+            <p> This is Blue colour</p>
+        </div>
+        <div class="col-md-3 col-sm-6 bg-success text-white text-center">
+            <h2>Green</h2>
+            <p> This is Green colour</p>
+        </div>
+        <div class="col-md-3 col-sm-6 bg-danger text-white text-center">
+            <h2>Red</h2>
+            <p> This is Red colour</p>
+        </div>
+
+        <div class="col-md-3 col-sm-6 bg-warning text-white text-center">
+            <h2>Yellow</h2>
+            <p> This is Yellow colour</p>
+        </div>
+
+
+    </div>
+</div>
+</section>
+
+<section>
+    <div class="container py-2">
+    <h3 class="text-center">Task 5: Text Break and Wrap</h3>
     <hr>
 
-    <p>This is left-aligned text.</p>
-    <p>This is center-aligned text.</p>
-    <p>This is right-aligned text.</p>
-
-    <h3>Task 2: Text Transformation</h3>
-    <hr>
-    <p>This text will appear in uppercase.</p>
-    <p>This text will appear in lowercase.</p>
-    <p>This text will appear capitalized.</p>
-
-    <h3>Task 3: Text Weight and Italic</h3>
-    <hr>
-    <p>This is bold text.</p>
-    <p>This is bolder weight text.</p>
-    <p>This is semibold weight text.</p>
-    <p>This is medium weight text.</p>
-    <p>This is normal weight text.</p>
-    <p>This is Light weight text.</p>
-    <p>This is Lighter weight text (relative to the parent element).</p>
-    <p>This text is in italics.</p>
-    <p>Text with normal font style</p>
-
-
-
-    <h3>Task 4: Text Color and Utilities</h3>
-    <hr>
-    <p>Tulisan warna biru (primary).</p>
-    <p>Tulisan warna hijau (success).</p>
-    <p>Tulisan warna merah (danger).</p>
-    <p>Tulisan warna kuning (warning).</p>
-    <p>Tulisan warna kelabu (secondary).</p>
-    <p>Tulisan warna gelap (dark).</p>
-    <p>Tulisan warna terang (light).</p>
-    <p>Tulisan warna putih (white).</p>
-    <p>Tulisan warna hitam (black).</p>
-    <p>Tulisan warna hitam 50%.</p>
-    <p>Tulisan warna putih 50%.</p>
-    <p>This is a lead paragraph for highlighting.</p>
-
-    <h3>Task 5: Text Break and Wrap</h3>
-    <hr>
-
-    <div class="badge text-bg-primary" style="width: 6rem;">
+    <div class="badge text-bg-primary text-wrap" style="width: 6rem;">
         This is a very long paragraph that will wrap naturally when it reaches the edge of its container.
     </div>
 
 
-    <p>
+    <p class="text-break">
         ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineIfItDoesn'tFitInTheContainer.ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineIfItDoesn'tFitInTheContainer.ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineIfItDoesn'tFitInTheContainer.ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineIfItDoesn'tFitInTheContainer.ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineIfItDoesn'tFitInTheContainer.
     </p>
+</div>
+</section>
+<footer class="bg-dark text-white text-center py-2">
+    <div class="container">
+        <p class="text-center"> &copy; 2024 Full-Stack Workshop - Exploring Bootstrap</p>
 
-
+    </div>
+</footer>
+<script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
